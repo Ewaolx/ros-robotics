@@ -16,21 +16,21 @@ two robots.
 
 Lab2:Perception and Motion planning 
 - This project deals with the perception and motion planning module in the robot autonomy.
-- The first part of the project uses RANSAC(https://en.wikipedia.org/wiki/Random_sample_consensus) inorder to to output 
-a set of lines seen by the robot identifying the obstacles in view.
+- The first part of the project uses RANSAC(https://en.wikipedia.org/wiki/Random_sample_consensus) in order to to output 
+a set of lines seen by the robot through laser scanner sensor identifying the obstacles in view.
 ![screen_3](https://user-images.githubusercontent.com/34932185/51089873-1d65c500-1742-11e9-98ab-cf56b0c63877.png)
 - The second half of the project implements Bug2 algorithm for navigation of the robot from source to destination in 
 the world view. The robot will mainly be in two states- GOAL_SEEK and WALL_FOLLOW. As soon as the 
 robot perceives wall in front of it, changes its state from GOAL_SEEK to WALL_FOLLOW where it starts following the wall, 
 upto the end of the wall.
 
-Lab4:Bayes Filter
+Lab4: Bayes Filter
 - This project deals with the localization module of the robot autonomy.
 - It uses the grid localization which is a variant of discrete Bayes Localization
 - The map is discretized into an occupancy grid, where each cell in the grid represents the probability of robot in that
 particular cell at a given timestep.
 - The grid cells with maximum probabilities at each step, characterize the robot’s trajectory. Grid Localization runs in two iterative steps —Motion and Observation.
-- The robot's motion commands and its perception at each time step is read from the ROSbag file. There are total 5 landmarks
+- The robot's motion commands and its perception at each time step is read from the ROSbag file. There are total 6 landmarks
 in the map at discrete locations.
 - In order to follow same unit transformation for the cell location and robot's location, the robot coordinates in 2D and
 its heading angle is discretized.
@@ -39,7 +39,12 @@ its heading angle is discretized.
 - The final output after 178 motion and observation timesteps consists of trajectory(trajectory.txt) of the robot, indicating
 the location of robot in the world at that particular timestep.
 
-
+Lab5: A* Planning
+- This project deals with the path-planning module of the robot autonomy.
+- It implements the A*(https://en.wikipedia.org/wiki/A*_search_algorithm) which find a optimal route from a starting point to goal by avoiding obstacles in its way.
+- The map.txt represents the map- 0 indicating free space, while 1 indicating occupied.
+- The euclidean distance is used as heurisitic cost between the goal and starting point.
+- Once the path is formed, the robot moves from starting point to end following that path.
 
 
 
