@@ -25,8 +25,21 @@ robot perceives wall in front of it, changes its state from GOAL_SEEK to WALL_FO
 upto the end of the wall.
 
 Lab4:Bayes Filter
+- This project deals with the localization module of the robot autonomy.
+- It uses the grid localization which is a variant of discrete Bayes Localization
+- The map is discretized into an occupancy grid, where each cell in the grid represents the probability of robot in that
+particular cell at a given timestep.
+- The grid cells with maximum probabilities at each step, characterize the robot’s trajectory. Grid Localization runs in two iterative steps —Motion and Observation.
+- The robot's motion commands and its perception at each time step is read from the ROSbag file. There are total 5 landmarks
+in the map at discrete locations.
+- In order to follow same unit transformation for the cell location and robot's location, the robot coordinates in 2D and
+its heading angle is discretized.
+- For the motion step, the odometry model is used which consists of- rotation_1,translation and rotation_2.
+- The noise for both motion and observation steps are added from Gaussian distribution.
+- The final output after 178 motion and observation timesteps consists of trajectory(trajectory.txt) of the robot, indicating
+the location of robot in the world at that particular timestep.
 
--  
+
 
 
 
