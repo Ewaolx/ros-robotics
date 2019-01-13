@@ -1,0 +1,19 @@
+<launch>
+              <node name="stage" pkg="stage_ros" type="stageros"
+	       args="$(find lab2)/world/playground.world" >
+              </node>
+
+
+                <node pkg="lab2" type="t_br_ca"
+          args="/robot_0" name="t1_br_ca"    output="screen" />
+
+               <node name="points_and_lines" pkg="lab2" type="mar"  >
+              </node> 
+
+             <!-- <node name="controller" pkg="lab2" type="controller" output="screen" >
+              </node> -->
+            
+            
+</launch>
+
+

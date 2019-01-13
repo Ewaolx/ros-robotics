@@ -1,0 +1,7 @@
+ <launch>
+
+   <node name="stage" pkg="stage_ros" type="stageros"
+      args="$(find lab5)/world/playground.world" />/>
+    <node pkg="lab5" type="a_star" name="run_a_star" output = "screen"/>
+
+  </launch>

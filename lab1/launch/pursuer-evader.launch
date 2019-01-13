@@ -1,0 +1,15 @@
+ <launch>
+
+    	<node name="stage" pkg="stage_ros" type="stageros"
+	      args="$(find lab1)/world/pursuer-evader.world" />
+
+    <node name="controller" pkg="lab1" type="run" /> 
+
+    <node pkg="lab1" type="tf_br_ca"
+          args="/robot_0" name="tf1_br_ca"    output="screen" />
+    <node pkg="lab1" type="tf_br_ca"
+          args="/robot_1" name="tf2_br_ca"  output="screen"   />
+   
+    <node pkg="lab1" type="pursuer_controller" name="pursuer_controller" output = "screen"/>
+
+  </launch>

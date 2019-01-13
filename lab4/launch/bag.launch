@@ -1,0 +1,5 @@
+<launch>
+             <node name="read" pkg="lab4" type="read_bag" output="screen"  >
+	     </node>
+</launch>
+
