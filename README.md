@@ -47,4 +47,20 @@ Lab5: A* Planning
 - Once the path is formed, the robot moves from starting point to end following that path.
 
 
+# Usage
+
+- Drop the folder into catkin workspace in `src/` folder.
+- From your cartkin workspace do `catkin_make --only-pkg-with-deps --folder_name` to build the code in workspace.
+- Run using `roslaunch folder_name launch_file.launch` in order to launch the program.
+- In order to install Stage, do `sudo apt-get install ros-kinetic-stage-ros`.
+
+
+
+
+
+
+
+
+
+
 
