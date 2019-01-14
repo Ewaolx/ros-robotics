@@ -18,6 +18,7 @@ Lab2: Perception and Motion planning
 - This project deals with the perception and motion planning module in the robot autonomy.
 - The first part of the project uses RANSAC(https://en.wikipedia.org/wiki/Random_sample_consensus) in order to to output 
 a set of lines seen by the robot through laser scanner sensor identifying the obstacles in view.
+
 ![screen_3](https://user-images.githubusercontent.com/34932185/51089873-1d65c500-1742-11e9-98ab-cf56b0c63877.png)
 - The second half of the project implements Bug2 algorithm for navigation of the robot from source to destination in 
 the world view. The robot will mainly be in two states- GOAL_SEEK and WALL_FOLLOW. As soon as the 
