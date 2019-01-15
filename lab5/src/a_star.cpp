@@ -421,24 +421,3 @@ int main(int argc, char **argv)
 
   return 0;
 }
-
-
-  
-  //parent_grid[0][0] = make_pair(1,10);
-  //cout<<"parent_:"<<parent_grid[0][0].first<<"dede"<<parent_grid[0][0].second;
-
-  // string text = "";
-  // ifstream file;
-  // file.open("/home/raj/catkin_ws/src/lab5/src/map.txt");
-  // if(!file.is_open())
-  // 	cout<<"Error while opening the file";
-  // else
-  // {
-  // 	file>>text;
-  // 	file>>text;
-  // 	file>>text;
-  // 	file>>text;
-  // 	cout<<"file:"<<text;
-  // }
-
-  //file.close();
