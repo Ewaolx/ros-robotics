@@ -209,6 +209,7 @@ int main( int argc, char** argv )
      line_strip.points.push_back(p1);
      line_strip.points.push_back(p2); */
      
+     // Dropping the inlier points by splitting them into inliers(myvector2) and outliers(myvector1)  
      vector <pair <float,float> > myvector1;
      vector <pair <float,float> > myvector2; 
      for(int i=0;i<myvector.size();i++)
