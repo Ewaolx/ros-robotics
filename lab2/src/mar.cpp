@@ -231,6 +231,8 @@ int main( int argc, char** argv )
      }
      myvector=myvector1; 
      ROS_INFO("myvector size after droping inliers : %d",myvector.size());
+       
+     // Finding the farthest two points by iterating over all points in the vecctor twice  
      float x1 = myvector2[0].first;
      float y1 = myvector2[0].second;
      float dis=0;
