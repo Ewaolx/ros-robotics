@@ -296,7 +296,6 @@ int main( int argc, char** argv )
     //myvector.clear();
     //ROS_INFO("\n myvector size AFTER  CLEAR : %d",myvector.size());
     marker_pub.publish(line_strip);
-    ROS_INFO("\n Coming till here -------------------<<<<<>>>>>>>>>>>>>>");
     ros::spinOnce();
     loop_rate.sleep();
     
