@@ -1,4 +1,4 @@
-/* Reference -  Code snippets could match the ROS tutorials, as they are modified in order to fit the requirement of the assignment.
+/* Reference -  Code snippets could match ROS tutorials, as they are modified in order to fit the requirement of the assignment.
    Source file for controlling the evader Robot.
 */
 #include "ros/ros.h"
